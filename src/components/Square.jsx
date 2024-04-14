@@ -3,7 +3,7 @@ import React from 'react'
 const Square = (props) => {
   return (
     <div
-    onClick={props.onclick}
+    onClick={props.click}
       style={{
         border: '2px solid red',
         height: '100px',

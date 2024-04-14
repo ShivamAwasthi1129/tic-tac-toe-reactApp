@@ -44,19 +44,19 @@ const Board = () => {
         <>
           <h4>Player {isXTurn ? 'X' : 'O'} please move</h4>
           <div className="board-row">
-            <Square onclick={() => handleClick(0)} value={state[0]} />
-            <Square onclick={() => handleClick(1)} value={state[1]} />
-            <Square onclick={() => handleClick(2)} value={state[2]} />
+            <Square click={() => handleClick(0)} value={state[0]} />
+            <Square click={() => handleClick(1)} value={state[1]} />
+            <Square click={() => handleClick(2)} value={state[2]} />
           </div>
           <div className="board-row">
-            <Square onclick={() => handleClick(3)} value={state[3]} />
-            <Square onclick={() => handleClick(4)} value={state[4]} />
-            <Square onclick={() => handleClick(5)} value={state[5]} />
+            <Square click={() => handleClick(3)} value={state[3]} />
+            <Square click={() => handleClick(4)} value={state[4]} />
+            <Square click={() => handleClick(5)} value={state[5]} />
           </div>
           <div className="board-row">
-            <Square onclick={() => handleClick(6)} value={state[6]} />
-            <Square onclick={() => handleClick(7)} value={state[7]} />
-            <Square onclick={() => handleClick(8)} value={state[8]} />
+            <Square click={() => handleClick(6)} value={state[6]} />
+            <Square click={() => handleClick(7)} value={state[7]} />
+            <Square click={() => handleClick(8)} value={state[8]} />
           </div>
         </>)}
     </div>
