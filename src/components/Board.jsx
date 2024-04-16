@@ -39,10 +39,11 @@ const Board = () => {
   return (
     <div className='board-container'>
       {isWinner ? (
-        <>{isWinner} won the game <button onClick={() => setState(Array(9).fill(null))}>Play Again</button> </>
+        <>{isWinner} won the game <button className='play-btn' onClick={() => setState(Array(9).fill(null))}>Play Again</button> </>
       ) : (
         <>
-          <h4>Player {isXTurn ? 'X' : 'O'} please move</h4>
+          
+             <h4>Player {isXTurn ? 'X' : 'O'} please move</h4>
           <div className="board-row">
             <Square click={() => handleClick(0)} value={state[0]} />
             <Square click={() => handleClick(1)} value={state[1]} />
@@ -58,7 +59,10 @@ const Board = () => {
             <Square click={() => handleClick(7)} value={state[7]} />
             <Square click={() => handleClick(8)} value={state[8]} />
           </div>
+          <button className='reset-btn' onClick={()=>setState(Array(9).fill(null))}>Reset game</button>
+          
         </>)}
+        
     </div>
   );
 
